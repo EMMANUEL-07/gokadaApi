@@ -37,9 +37,9 @@ class SuggestionsController extends Controller
     {
         try{
             $suggestions = new SuggestionDataStore;
-            $suggestions->Address = $request->Address;
-            $suggestions->Main = $request->Main;
-            $suggestions->Sec = $request->Sec;
+            $suggestions->address = $request->address;
+            $suggestions->main = $request->main;
+            $suggestions->sec = $request->sec;
             $suggestions->lat = $request->lat;
             $suggestions->lng = $request->lng;
             $suggestions->save();

@@ -15,11 +15,11 @@ class CreateSuggestionDataStoresTable extends Migration
     {
         Schema::create('suggestion_data_stores', function (Blueprint $table) {
             $table->id();
-            $table->string('Address');
-            $table->string('Main');
-            $table->string('Sec');
-            $table->float('lat');
-            $table->float('lng');
+            $table->string('address');
+            $table->string('main');
+            $table->string('sec');
+            $table->float('lat', 8,6);
+            $table->float('lng', 8,6);
             $table->timestamps();
         });
     }
